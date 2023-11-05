@@ -1,0 +1,48 @@
+/* MAIN */
+
+main {
+    @include fondo;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+.imagenCorrediza {
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.botonCarrusel {
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+.divPcs {
+    gap: 10px;
+}
+
+.imgPcs,
+.imgAmd,
+.imgNvidiaintel {
+    width: 300px;
+    border: $border;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.divSomos,
+.divUbicacion {
+    padding-top: $quince;
+    padding-bottom: $quince;
+}
+
+.divSomos,
+p,
+.divUbicacion {
+    font-size: $rem;
+}
+
+.tamañoImg {
+    margin-top: 10px;
+}

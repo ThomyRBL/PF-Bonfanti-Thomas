@@ -1,0 +1,18 @@
+/* MIXIN */
+
+@mixin fondo {
+    background-image: url(../img/0-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin opacidad {
+    opacity: 0.5;
+}
+
+@mixin hoverImg {
+    cursor: pointer;
+    background-color: gray;
+    transform: scale(1.05);
+}

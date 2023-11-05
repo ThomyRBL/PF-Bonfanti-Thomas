@@ -1,0 +1,23 @@
+/* TITULOS */
+
+h1 {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.hdosIngresos,
+.hdosProductos,
+.hdosAmd,
+.hdosNvidiaintel,
+.hdosPcs {
+    margin-top: $quince;
+}
+
+h3 {
+    padding-bottom: $quince;
+}

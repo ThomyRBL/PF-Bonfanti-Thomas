@@ -1,0 +1,35 @@
+/* HEADER */
+
+/* LOGO */
+
+.logo {
+    width: 150px;
+}
+
+header {
+    border-bottom: $border;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 2;
+    @include fondo;
+}
+
+/* NAVEGADOR */
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    font-size: $rem;
+    transition: 300ms;
+}
+
+nav li {
+    padding: 0 25px;
+}
+
+.botonNav {
+    background-color: blueviolet;
+}

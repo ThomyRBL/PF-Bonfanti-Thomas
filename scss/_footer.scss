@@ -1,0 +1,12 @@
+/* FOOTER */
+
+footer {
+    @include fondo;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: $border;
+    font-size: $rem;
+}

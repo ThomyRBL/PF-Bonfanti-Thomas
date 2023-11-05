@@ -1,26 +1,112 @@
+@charset "UTF-8";
+/* MIXIN */
 /* RESET */
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* FONDO DE LA PAGINA */
-
 body {
-    font-family: 'Lucida Sans'
+  font-family: "Lucida Sans";
+}
+
+/* HEADER */
+/* LOGO */
+.logo {
+  width: 150px;
+}
+
+header {
+  border-bottom: 1px white solid;
+  padding: 10px 20px;
+  top: 0;
+  z-index: 2;
+  background-image: url(../img/0-fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* NAVEGADOR */
+ul {
+  list-style-type: none;
+}
+
+li,
+a {
+  font-size: 1rem;
+  transition: 300ms;
+}
+
+nav li {
+  padding: 0 25px;
+}
+
+.botonNav {
+  background-color: blueviolet;
+}
+
+/* MAIN */
+main {
+  background-image: url(../img/0-fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+.imagenCorrediza {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.botonCarrusel {
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+.divPcs {
+  gap: 10px;
+}
+
+.imgPcs,
+.imgAmd,
+.imgNvidiaintel {
+  width: 300px;
+  border: 1px white solid;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.divSomos,
+.divUbicacion {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.divSomos,
+p,
+.divUbicacion {
+  font-size: 1rem;
+}
+
+.tamañoImg {
+  margin-top: 10px;
 }
 
 /* TITULOS */
-
 h1 {
-    font-size: 3rem;
-    padding-top: 10px;
-    padding-bottom: 5px;
+  font-size: 3rem;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .hdosIngresos,
@@ -28,233 +114,122 @@ h2 {
 .hdosAmd,
 .hdosNvidiaintel,
 .hdosPcs {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 h3 {
-    padding-bottom: 15px;
-}
-
-/* LOGO */
-
-.logo {
-    width: 150px;
-}
-
-/* HEADER */
-
-header {
-    border-bottom: 3px solid white;
-    padding: 10px 20px;
-    top: 0;
-    background-image: url(../img/0-fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 2;
-}
-
-/* NAVEGADOR */
-
-ul {
-    list-style-type: none;
-}
-
-li,
-a {
-    font-size: 1rem;
-    transition: 300ms;
-}
-
-nav li {
-    padding: 0 25px;
-}
-
-.botonNav {
-    background-color: blueviolet;
-}
-
-/* MAIN */
-
-main,
-footer {
-    background-image: url(../img/0-fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-main {
-    padding-bottom: 30px;
-}
-
-.imagenCorrediza {
-    width: 100%;
-    padding-bottom: 25px;
-}
-
-.botonCarrusel {
-    margin-bottom: 25px;
-    z-index: 1;
-}
-
-.divPcs {
-    gap: 10px;
-}
-
-.imgPcs,
-.imgAmd,
-.imgNvidiaintel {
-    width: 300px;
-    border: 2px white solid;
-    border-radius: 10px;
-    transition: 300ms;
-}
-
-.divSomos,
-.divUbicacion {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.divSomos,
-p,
-.divUbicacion {
-    font-size: 1rem;
-}
-
-.tamañoImg {
-    margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 /* IFRAME */
-
 .iframe {
-    width: 800px;
-    padding-top: 25px;
-}
-
-/* FORMULARIO */
-
-form {
-    margin-left: 10px;
-    margin-right: 10px;
+  width: 800px;
+  padding-top: 25px;
 }
 
 /* FOOTER */
+footer {
+  background-image: url(../img/0-fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-top: 1px solid white;
-    font-size: 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px white solid;
+  font-size: 1rem;
 }
 
-/* HOVER */
-
+/* Pseudo */
 li:hover {
-    transform: scale(1.3);
-    opacity: 0.5;
+  transform: scale(1.3);
+  opacity: 0.5;
 }
-
 li:active {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
-
-.imgAmd:hover, .imgNvidiaintel:hover, .imgPcs:hover {
-    cursor: pointer;
-    background-color: gray;
-    transform: scale(1.05);
+.imgAmd:hover,
+.imgNvidiaintel:hover,
+.imgPcs:hover {
+  cursor: pointer;
+  background-color: gray;
+  transform: scale(1.05);
 }
 
 .imagenCorrediza:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.imgAmd:active, .imgNvidiaintel:active, .imgPcs:active {
-    opacity: 0.5;
+.imgAmd:active,
+.imgNvidiaintel:active,
+.imgPcs:active {
+  opacity: 0.5;
 }
 
 /* MEDIA */
-
 /* IMAGENES */
-
-@media (max-width:905px) {
-
-    .imgPcs,
-    .imgAmd,
-    .imgNvidiaintel {
-        width: 250px;
-    }
+@media (max-width: 905px) {
+  .imgPcs,
+  .imgAmd,
+  .imgNvidiaintel {
+    width: 250px;
+  }
 }
-
-@media (max-width:1315px) and (min-width: 605px) {
-
-    .imgPcs,
-    .imgAmd,
-    .imgNvidiaintel {
-        width: 250px;
-    }
+@media (max-width: 1315px) and (min-width: 605px) {
+  .imgPcs,
+  .imgAmd,
+  .imgNvidiaintel {
+    width: 250px;
+  }
 }
-
-@media (max-width:1725px) and (min-width: 1125px) {
-
-    .imgPcs,
-    .imgAmd,
-    .imgNvidiaintel {
-        width: 250px;
-    }
-
+@media (max-width: 1725px) and (min-width: 1125px) {
+  .imgPcs,
+  .imgAmd,
+  .imgNvidiaintel {
+    width: 250px;
+  }
 }
-
-@media (max-width:1124px) and (min-width: 865px) {
-
-    .imgPcs,
-    .imgAmd,
-    .imgNvidiaintel {
-        width: 350px;
-    }
-
+@media (max-width: 1124px) and (min-width: 865px) {
+  .imgPcs,
+  .imgAmd,
+  .imgNvidiaintel {
+    width: 350px;
+  }
 }
-
 /* TAMAÑO TEXTO */
-
 @media (max-width: 575px) {
-
-    .divSomos,
-    p, .divUbicacion{
-        font-size: 1rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
+  .divSomos,
+  p,
+  .divUbicacion {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
 }
-
 /* MAPA UBICACION */
-
-@media (max-width:575px) {
-    .iframe {
-        width: 300px;
-        height: 300px;
-    }
+@media (max-width: 575px) {
+  .iframe {
+    width: 300px;
+    height: 300px;
+  }
 }
-
-@media (max-width:992px) and (min-width: 576px) {
-    .iframe {
-        width: 500px;
-    }
+@media (max-width: 992px) and (min-width: 576px) {
+  .iframe {
+    width: 500px;
+  }
 }
-
 /* FOOTER */
-
-@media (max-width:1315px) {
-    .footer {
-        font-size: 1rem;
-    }
+@media (max-width: 1315px) {
+  .footer {
+    font-size: 1rem;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */
